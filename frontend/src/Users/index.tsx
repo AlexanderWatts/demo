@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import User from './User';
+import User from '../types/User';
 
 const Users: FC = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -22,8 +22,8 @@ const Users: FC = () => {
     <>
       <h1>Users</h1>
       {
-        users.map(({ id, name, age }: User):ReactNode => (
-          <div>
+        users.map(({ id, name, age }: User, key):ReactNode => (
+          <div key={key}>
             <h3>Name: {name}</h3>
             <p>ID: {id}</p>
             <p>Age: {age}</p>
