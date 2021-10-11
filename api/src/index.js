@@ -1,9 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const users = require('./users');
 
 const PORT = 9000;
 
 const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('DEMO API');
