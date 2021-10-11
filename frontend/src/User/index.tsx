@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import User from '../Users/User';
+import User from '../types/User';
 
 const User:FC<{ id:number }> = ({ id }) => {
   const [user, setUser] = useState<User[]>([]);
