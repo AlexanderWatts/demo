@@ -7,7 +7,7 @@ const App = () => (
   <>
     <h1>Demo</h1>
     <Users />
-    <User id={10} />
+    <User id={2} />
   </>
 );
 
