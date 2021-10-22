@@ -21,8 +21,6 @@ app.get('/users/:userId', (req, res) => {
 
   const user = users.filter((user) => user.id == userId);
 
-  console.log(user);
-
   res.status(200).json(user);
 });
 
