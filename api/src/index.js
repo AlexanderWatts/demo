@@ -16,7 +16,7 @@ app.get('/users', (req, res) => {
   res.status(200).json(users);
 });
 
-app.get('/users/:userId', (req, res) => {
+app.get('/user/:userId', (req, res) => {
   const { userId } = req.params;
 
   const user = users.filter((user) => user.id == userId);
