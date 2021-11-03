@@ -1,15 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Users from './Users';
-import User from './User';
-import LoadGraph from './LoadGraph';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <>
     <h1>Demo</h1>
-    <LoadGraph />
-    <Users />
-    <User id={2} />
   </>
 );
 
