@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Chart from 'chart.js/auto';
 import data from './data';
+import { Row } from 'react-bootstrap';
 
 const LoadGraph = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -56,21 +57,9 @@ const LoadGraph = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-      }}
-    >
-      <canvas
-        style={{
-          justifyContent: 'center',
-          width: '60%',
-          margin: '0 auto',
-        }}
-        ref={canvasRef}
-      ></canvas>
-    </div>
+    <Row>
+      <canvas ref={canvasRef}></canvas>
+    </Row>
   );
 };
 
